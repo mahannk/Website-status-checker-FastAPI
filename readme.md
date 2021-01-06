@@ -6,11 +6,11 @@
 
 All responses will have the form
 
-'''json
+```json
 {
     "URL" : "https://..."
 }
-'''
+```
 
 ### List of all devices
 #### Definition
@@ -20,14 +20,15 @@ All responses will have the form
 #### Response
 * `200 OK` on success
 
-'''json
+```json
 [
     {
-        "URL" : *"https://..."*,
-        "Status Code" : *"URL status code"*,
-        "Redirected URL" : *"redirect tracker"*
+        "URL" : "https://...",
+        "Status Code" : "URL status code",
+        "Redirected URL" : "redirect tracker"
     }
 ]
+```
 
 
 #### general rule for running main.py ####
