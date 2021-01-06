@@ -26,5 +26,3 @@ def status_checker(input_data: List[Input_Data], response: Response):
     
     return {'message' : 'success', 'data' : results}
 
-if __name__=="__main__":
-    uvicorn.run("main:app",host='localhost', port=8000, reload=True, debug=True, workers=4)
