@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Response, status
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel 
 from typing import List 
 import markdown
@@ -13,7 +14,7 @@ class Input_Data(BaseModel):
 
 
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 def read_me():
     with open('readme.md', 'r') as f:
         content = f.read()
