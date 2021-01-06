@@ -3,7 +3,6 @@ from pydantic import BaseModel
 from typing import List 
 import markdown
 from services import checking_url
-import uvicorn
 
 app = FastAPI()
 
