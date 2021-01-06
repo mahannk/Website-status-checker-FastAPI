@@ -29,7 +29,7 @@ class checking_url:
             status_code = None
             redirected_URL = None
             
-        return {'URL' : url, 'status_code' : status_code, 'redirected_url' : redirected_URL}
+        return {'URL' : url, 'Status Code' : status_code, 'Redirected URL' : redirected_URL}
 
     @staticmethod
     def run(urls):

@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import List 
 import markdown
 from services import checking_url
+import os
 
 app = FastAPI()
 
@@ -14,7 +15,10 @@ class Input_Data(BaseModel):
 
 @app.get("/")
 def read_me():
-    return markdown.markdown("Fast API is up and running")
+    with open(os.path.dirname(app.root_path) + '/readme.md', 'r') as f:
+        content = f.read()
+        
+        return markdown.markdown(content)
 
 
 @app.post('/url_checker/')
