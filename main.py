@@ -15,7 +15,7 @@ class Input_Data(BaseModel):
 
 @app.get("/")
 def read_me():
-    with open(os.path.dirname(app.instance_path) + '/readme.md', 'r') as f:
+    with open('readme.md', 'r') as f:
         content = f.read()
         
         return markdown.markdown(content)
