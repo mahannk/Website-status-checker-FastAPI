@@ -38,3 +38,4 @@ All responses will have the form
 - Run `gunicorn -k uvicorn.workers.UvicornWorker main:app` for production and server development.
 
 ### The program is ready to be deployed on Heroku with Git 
+### Deployed Heroku Link `https://status-checker-fastapi.herokuapp.com/`
