@@ -13,11 +13,13 @@ All responses will have the form
 ```
 
 ### List of all devices
+
 #### Definition
 
 `POST /url_checker`
 
 #### Response
+
 * `200 OK` on success
 
 ```json
@@ -31,7 +33,8 @@ All responses will have the form
 ```
 
 
-#### general rule for running main.py ####
+#### General rule for running main.py ####
+
 * Run `uvicorn main:app --reload` from the command line for local development.
 * Run `gunicorn -k uvicorn.workers.UvicornWorker main:app` for production and server development.
 
