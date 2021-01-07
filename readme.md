@@ -1,6 +1,6 @@
 # Website Status Checker
 
-## Using FastAPI to run a Python script for checking status of URLs 
+## Building an API in Python with FastAPI
 
 ### Usage
 
